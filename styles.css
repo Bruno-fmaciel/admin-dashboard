@@ -47,7 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 strong{
     font-weight:bold;
@@ -216,7 +218,7 @@ div.annoucement {
 div.annoucement- {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     line-height: 15px;
 }
 
