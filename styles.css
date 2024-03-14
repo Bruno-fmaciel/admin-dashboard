@@ -53,7 +53,7 @@ strong{
 .container {
     display: grid;
     grid-template: "sidebar header" "sidebar body";
-    grid-template-columns: 1.5fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 
 }
@@ -67,7 +67,14 @@ strong{
 }
 
 .sidebar {
+    background-color: rgb(66, 66, 241);
+    color: white;
+    font-size: 3vh;
     grid-area: sidebar;
+    display: grid;
+    grid-template: "logo" "options" "support" ".";
+    grid-template-rows: 1fr 2fr 2fr 3fr;
+
 }
 
 .projects {
@@ -81,3 +88,51 @@ strong{
 .trending {
     grid-area: trending;
 }
+
+div.logo {
+    grid-area: logo;
+    align-self: center;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.options {
+    grid-area: options;
+    align-self: center;
+}
+
+div.support {
+    grid-area: support;
+    align-self: center;
+}
+
+ul.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ul.support {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li.options,
+li.support {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+div.logo>p {
+    font-size: 4vh;
+}
+
+i#logo {
+    font-size: 4vh;
+}
+
