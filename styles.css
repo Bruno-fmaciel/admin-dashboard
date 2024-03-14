@@ -202,6 +202,14 @@ div.annoucement {
     gap: 5px;
     padding-bottom: 10px;
     border-bottom: 2px solid gray;
+    line-height: 15px;
+}
+
+div.annoucement- {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 15px;
 }
 
 p.title {
@@ -210,6 +218,28 @@ p.title {
 
 .trending {
     grid-area: trending;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div.trendings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 3vh;
+}
+
+div.trend-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    gap: 20px;
 }
 
 div.logo {
@@ -257,5 +287,16 @@ div.logo>p {
 
 i#logo {
     font-size: 4vh;
+}
+
+img.friend {
+    height: 5vh;
+    border-radius: 50px;
+}
+
+div.trend-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
