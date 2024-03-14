@@ -46,3 +46,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+strong{
+    font-weight:bold;
+   }
+
+.container {
+    display: grid;
+    grid-template: "sidebar header" "sidebar body";
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.body {
+    grid-area: body;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.annoucements {
+    grid-area: annoucements;
+}
+
+.trending {
+    grid-area: trending;
+}
